@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwindcss</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- <link rel="stylesheet" href="input.css"> -->
+
+<body class="weatherBG bg-slate-400 flex justify-center items-center h-screen  border-2">
+    <div class="card  flex flex-col justify-center items-center bg-teal-900 w-auto h-auto rounded-[10px]">
+        <div class="search  flex flex-row text-center px-6 py-6">
+            <input type="text" placeholder="Enter City Name" spellcheck="false"
+                class="h-9 w-auto rounded-xl text-[16px] px-1 font-bold" id="searchbox">
+            <button class="rounded-xl  bg-white p-1 mx-2 h-[35px] w-[35px] cursor-pointer" id="searchbtn">
+                <img src="images/search.png" class="h-5.2 w-5.4 px-1 flex items-center ">
+            </button>
+        </div>
+        <div class="error bg-gray-500 rounded-[5px] px-2 py-1 my-1 font-bold text-white hidden">Invalid Output</div>
+        <div class="Check hidden">
+            <div class="weather flex flex-col display-none">
+                <div class="weatherImg h-70 w-70 mx-auto"> <img src="images/clear.png" class="weatherpng"></div>
+                <h1 class="temp  text-white text-4xl text-center font-bold ">38<span>°C</span>
+                    <h2 class="city text-white text-4xl text-center px-1 py-2">Ahmedabad</h2>
+                </h1>
+            </div>
+            <div class="Odetails flex flex-row justify-around items-center">
+                <div class="humidity flex flex-row mx-3 my-6">
+                    <img src="images/humidity.png" class="h-10 w-10 flex flex-col">
+                    <span class="mx-2 ">
+                        <p class="humidity text-white font-bold mx-1 ">Humidty</p>
+                        <p class="humiditydata text-white mx-1 "><strong>20</strong>%</p>
+                    </span>
+    
+                </div>
+                <div class="windspeed flex flex-row mx-3 my-6">
+                    <img src="images/wind.png" class="h-10 w-10 flex  flex-col">
+                    <span class="mx-2 ">
+                        <p class="windspeed text-white font-bold mx-1 ">Windspeed</p>
+                        <p class=" speed text-white mx-1 "><strong>32 </strong>km/h</p>
+                    </span>
+                </div>
+        </div>
+
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
